@@ -52,7 +52,7 @@ jobs:
       
     - name: Code Deploy
       run: >
-        aws deploy create-deployment --application-name be-91-dlglwo123
-        --deployment-config-name'CodeDeployDefault.AllAtOnce
-        --deployment-group-name be-91-dlglwo123-group
+        aws deploy create-deployment --application-name be-0-name
+        --deployment-config-name CodeDeployDefault.AllAtOnce
+        --deployment-group-name be-0-name-group
         --s3-location bucket=$S3_BUCKET_NAME,bundleType=zip,key=practice-deploy.zip
